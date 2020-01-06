@@ -80,7 +80,7 @@ int main( void )
 {
     /* Perform any hardware initialization that does not require the RTOS to be
      * running.  */
-    prvMiscInitialization();
+    prvMiscInitialization()
 
     /* Create tasks that are not dependent on the Wi-Fi being initialized. */
     xLoggingTaskInitialize( mainLOGGING_TASK_STACK_SIZE,
